@@ -19,7 +19,9 @@ After installation is complete, edit your [mkdocs.yml] config file and set the
 [theme] to one of the following Bootwatch themes included. The full list is as
 follows:
 
+ - [mkdocs-classic](#mkdocs)
  - [amelia-classic](#amelia)
+ - [bootstrap-classic](#bootstrap)
  - [cerulean-classic](#cerulean)
  - [cosmo-classic](#cosmo)
  - [cyborg-classic](#cyborg)
@@ -50,8 +52,14 @@ In addition, you can request an inverted navigation header:
 This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
 Previews of the other themes can be seen below.
 
+### MkDocs
+![MkDocs](/screenshots/mkdocs.png)
+
 ### Amelia
 ![Amelia](/screenshots/amelia.png)
+
+### Bootstrap
+![Bootstrap](/screenshots/bootstrap.png)
 
 ### Cerulean
 ![Cerulean](/screenshots/cerulean.png)
