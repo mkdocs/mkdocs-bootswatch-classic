@@ -64,8 +64,7 @@
     </head>
 
     <body{% if page and page.is_homepage %} class="homepage"{% endif %}>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar {% if config.extra.theme_inverse %}navbar-inverse{% else %}navbar-default{% endif %} navbar-fixed-top" role="navigation">
             <div class="container">
 
                 <!-- Collapsed navigation -->
