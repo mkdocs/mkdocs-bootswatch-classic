@@ -26,6 +26,7 @@ setup(
 
             'mkdocs-classic = mkdocs_bootswatch_classic.mkdocs',
             'amelia-classic = mkdocs_bootswatch_classic.amelia',
+            'bootstrap-classic = mkdocs_bootswatch_classic.bootstrap',
             'cerulean-classic = mkdocs_bootswatch_classic.cerulean',
             'cosmo-classic = mkdocs_bootswatch_classic.cosmo',
             'cyborg-classic = mkdocs_bootswatch_classic.cyborg',
