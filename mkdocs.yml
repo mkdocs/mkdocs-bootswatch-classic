@@ -1,14 +1,14 @@
-site_name: MkDocs Bootswatch Themes
-site_url: http://mkdocs.github.io/mkdocs-bootswatch/
-site_description: MkDocs Bootswatch Themes
+site_name: MkDocs Classic Bootswatch Themes
+site_url: http://mkdocs.github.io/mkdocs-bootswatch-classic/
+site_description: MkDocs Classic Bootswatch Themes
 site_author: Tom Christie & Dougal Matthews
 
-repo_url: https://github.com/mkdocs/mkdocs-bootswatch
+repo_url: https://github.com/mkdocs/mkdocs-bootswatch-classic
 
 copyright: Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, <a href="http://www.dougalmatthews.com/">Dougal Matthews</a>.
 
 theme:
-    name: flatly
+    name: flatly-classic
 
 markdown_extensions:
     - toc:

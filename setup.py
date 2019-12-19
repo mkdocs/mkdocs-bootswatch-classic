@@ -6,7 +6,7 @@ VERSION = '1.0'
 
 
 setup(
-    name="mkdocs-bootswatch",
+    name="mkdocs-bootswatch-classic",
     version=VERSION,
     url='http://www.mkdocs.org',
     license='BSD',
@@ -19,18 +19,24 @@ setup(
     python_requires='>=2.7.9,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*',
     entry_points={
         'mkdocs.themes': [
-            'amelia = mkdocs_bootswatch.amelia',
-            'cerulean = mkdocs_bootswatch.cerulean',
-            'cosmo = mkdocs_bootswatch.cosmo',
-            'cyborg = mkdocs_bootswatch.cyborg',
-            'flatly = mkdocs_bootswatch.flatly',
-            'journal = mkdocs_bootswatch.journal',
-            'readable = mkdocs_bootswatch.readable',
-            'simplex = mkdocs_bootswatch.simplex',
-            'slate = mkdocs_bootswatch.slate',
-            'spacelab = mkdocs_bootswatch.spacelab',
-            'united = mkdocs_bootswatch.united',
-            'yeti = mkdocs_bootswatch.yeti',
+            # Amelia and Readable don't have Bootswatch 4 versions, so we can
+            # keep these around without the `-classic` suffix for compatibility.
+            'amelia = mkdocs_bootswatch_classic.amelia',
+            'readable = mkdocs_bootswatch_classic.readable',
+
+            'mkdocs-classic = mkdocs_bootswatch_classic.mkdocs',
+            'amelia-classic = mkdocs_bootswatch_classic.amelia',
+            'cerulean-classic = mkdocs_bootswatch_classic.cerulean',
+            'cosmo-classic = mkdocs_bootswatch_classic.cosmo',
+            'cyborg-classic = mkdocs_bootswatch_classic.cyborg',
+            'flatly-classic = mkdocs_bootswatch_classic.flatly',
+            'journal-classic = mkdocs_bootswatch_classic.journal',
+            'readable-classic = mkdocs_bootswatch_classic.readable',
+            'simplex-classic = mkdocs_bootswatch_classic.simplex',
+            'slate-classic = mkdocs_bootswatch_classic.slate',
+            'spacelab-classic = mkdocs_bootswatch_classic.spacelab',
+            'united-classic = mkdocs_bootswatch_classic.united',
+            'yeti-classic = mkdocs_bootswatch_classic.yeti',
         ]
     },
     zip_safe=False

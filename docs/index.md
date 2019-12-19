@@ -2,8 +2,9 @@ title: Home
 
 # MkDocs Bootstrap Theme
 
-This project provides [MkDocs] themes for the different Bootstrap themes
-provided by the [Bootswatch] project.
+This project provides legacy [MkDocs] themes based on the 1.0.x version of the
+`mkdocs` theme for the different Bootstrap 2 themes provided by the
+[Bootswatch] project.
 
 
 ## Installation & Usage
@@ -11,33 +12,33 @@ provided by the [Bootswatch] project.
 Install the collection of themes with pip, which is hopefully how you
 installed MkDocs.
 
-    pip install mkdocs-bootswatch
+    pip install mkdocs-bootswatch-classic
 
 
 After installation is complete, edit your [mkdocs.yml] config file and set the
 [theme] to one of the following Bootwatch themes included. The full list is as
 follows:
 
- - [amelia](#amelia)
- - [cerulean](#cerulean)
- - [cosmo](#cosmo)
- - [cyborg](#cyborg)
- - [flatly](#flatly)
- - [journal](#journal)
- - [readable](#readable)
- - [simplex](#simplex)
- - [slate](#slate)
- - [spacelab](#spacelab)
- - [united](#united)
- - [yeti](#yeti)
+ - [amelia-classic](#amelia)
+ - [cerulean-classic](#cerulean)
+ - [cosmo-classic](#cosmo)
+ - [cyborg-classic](#cyborg)
+ - [flatly-classic](#flatly)
+ - [journal-classic](#journal)
+ - [readable-classic](#readable)
+ - [simplex-classic](#simplex)
+ - [slate-classic](#slate)
+ - [spacelab-classic](#spacelab)
+ - [united-classic](#united)
+ - [yeti-classic](#yeti)
 
 For example:
 
-    theme: amelia
+    theme: amelia-classic
 
 Or:
 
-    theme: yeti
+    theme: yeti-classic
 
 In addition, you can request an inverted navigation header:
 

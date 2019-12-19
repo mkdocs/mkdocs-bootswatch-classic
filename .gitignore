@@ -1,5 +1,5 @@
 *.pyc
 dist/
-mkdocs_bootswatch.egg-info/
+mkdocs_bootswatch_classic.egg-info/
 site/
 .tox
