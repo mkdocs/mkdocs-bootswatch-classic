@@ -53,46 +53,46 @@ This [documentation] is rendered with the Bootswatch [Flatly](#flatly) theme.
 Previews of the other themes can be seen below.
 
 ### MkDocs
-![MkDocs](/screenshots/mkdocs.png)
+![MkDocs](screenshots/mkdocs.png)
 
 ### Amelia
-![Amelia](/screenshots/amelia.png)
+![Amelia](screenshots/amelia.png)
 
 ### Bootstrap
-![Bootstrap](/screenshots/bootstrap.png)
+![Bootstrap](screenshots/bootstrap.png)
 
 ### Cerulean
-![Cerulean](/screenshots/cerulean.png)
+![Cerulean](screenshots/cerulean.png)
 
 ### Cosmo
-![Cosmo](/screenshots/cosmo.png)
+![Cosmo](screenshots/cosmo.png)
 
 ### Cyborg
-![Cyborg](/screenshots/cyborg.png)
+![Cyborg](screenshots/cyborg.png)
 
 ### Flatly
-![Flatly](/screenshots/flatly.png)
+![Flatly](screenshots/flatly.png)
 
 ### Journal
-![Journal](/screenshots/journal.png)
+![Journal](screenshots/journal.png)
 
 ### Readable
-![Readable](/screenshots/readable.png)
+![Readable](screenshots/readable.png)
 
 ### Simplex
-![Simplex](/screenshots/simplex.png)
+![Simplex](screenshots/simplex.png)
 
 ### Slate
-![Slate](/screenshots/slate.png)
+![Slate](screenshots/slate.png)
 
 ### Spacelab
-![Spacelab](/screenshots/spacelab.png)
+![Spacelab](screenshots/spacelab.png)
 
 ### United
-![United](/screenshots/united.png)
+![United](screenshots/united.png)
 
 ### Yeti
-![Yeti](/screenshots/yeti.png)
+![Yeti](screenshots/yeti.png)
 
 [Mkdocs]: http://www.mkdocs.org
 [mkdocs.yml]: http://www.mkdocs.org/user-guide/configuration/
