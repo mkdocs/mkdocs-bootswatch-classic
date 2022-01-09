@@ -1,0 +1,2 @@
+mkdocs_bootswatch_classic/**/js/bootstrap-*.min.js
+mkdocs_bootswatch_classic/**/js/jquery-*.min.js

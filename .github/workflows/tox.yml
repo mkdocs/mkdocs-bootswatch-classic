@@ -1,0 +1,69 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.6, 3.7, 3.8, 3.9, '3.10', pypy3]
+        include:
+          - python-version: 3.6
+            tox-env: py36
+          - python-version: 3.7
+            tox-env: py37
+          - python-version: 3.8
+            tox-env: py38
+          - python-version: 3.9
+            tox-env: py39
+          - python-version: '3.10'
+            tox-env: py310
+          - python-version: pypy3
+            tox-env: pypy3
+    env:
+      TOXENV: ${{ matrix.tox-env }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip tox coverage codecov
+      - name: Run tox
+        run: |
+          python -m tox --discover $(which python)
+        shell: bash
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip tox
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install Node dependencies
+        run: |
+          npm install -g markdownlint-cli jshint csslint
+      - name: Check with markdown-lint
+        if: always()
+        run: python -m tox -e markdown-lint
+      - name: Check with jshint
+        if: always()
+        run: python -m tox -e jshint
+      - name: Check with csslint
+        if: always()
+        run: python -m tox -e csslint
