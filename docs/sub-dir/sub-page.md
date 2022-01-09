@@ -1,4 +1,6 @@
+---
 title: Sub page
+---
 
 # Sub Page 1
 

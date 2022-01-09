@@ -1,4 +1,6 @@
+---
 title: Examples
+---
 
 # Theme Examples
 
